@@ -3,9 +3,9 @@ package sing
 import (
 	"fmt"
 
+	"github.com/dev7dev/uri-to-json/pkgs/parser"
+	"github.com/dev7dev/uri-to-json/pkgs/utils"
 	"github.com/gogf/gf/v2/encoding/gjson"
-	"github.com/gvcgo/vpnparser/pkgs/parser"
-	"github.com/gvcgo/vpnparser/pkgs/utils"
 )
 
 var SingWireguard string = `{

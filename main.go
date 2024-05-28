@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/gvcgo/vpnparser/pkgs/cmd"
-	_ "github.com/gvcgo/vpnparser/pkgs/outbound/sing"
-	_ "github.com/gvcgo/vpnparser/pkgs/outbound/xray"
-	_ "github.com/gvcgo/vpnparser/pkgs/parser"
+	"github.com/dev7dev/uri-to-json/pkgs/cmd"
+	_ "github.com/dev7dev/uri-to-json/pkgs/outbound/sing"
+	_ "github.com/dev7dev/uri-to-json/pkgs/outbound/xray"
+	_ "github.com/dev7dev/uri-to-json/pkgs/parser"
 )
 
 func main() {

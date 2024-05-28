@@ -6,9 +6,9 @@ import (
 
 	"encoding/json"
 
+	"github.com/dev7dev/uri-to-json/pkgs/parser"
+	"github.com/dev7dev/uri-to-json/pkgs/utils"
 	"github.com/gvcgo/goutils/pkgs/gutils"
-	"github.com/gvcgo/vpnparser/pkgs/parser"
-	"github.com/gvcgo/vpnparser/pkgs/utils"
 )
 
 type Result struct {

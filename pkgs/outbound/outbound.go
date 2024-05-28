@@ -3,10 +3,10 @@ package outbound
 import (
 	"fmt"
 
-	"github.com/gvcgo/vpnparser/pkgs/outbound/sing"
-	"github.com/gvcgo/vpnparser/pkgs/outbound/xray"
-	"github.com/gvcgo/vpnparser/pkgs/parser"
-	"github.com/gvcgo/vpnparser/pkgs/utils"
+	"github.com/dev7dev/uri-to-json/pkgs/outbound/sing"
+	"github.com/dev7dev/uri-to-json/pkgs/outbound/xray"
+	"github.com/dev7dev/uri-to-json/pkgs/parser"
+	"github.com/dev7dev/uri-to-json/pkgs/utils"
 )
 
 type ClientType string

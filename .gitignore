@@ -4,3 +4,5 @@ vpnparser.exe
 *.json
 *.txt
 .idea
+main.exe
+.github

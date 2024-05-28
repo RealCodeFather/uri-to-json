@@ -6,8 +6,8 @@ import (
 
 	"encoding/json"
 
-	"github.com/gvcgo/vpnparser/pkgs/parser"
-	"github.com/gvcgo/vpnparser/pkgs/utils"
+	"github.com/dev7dev/uri-to-json/pkgs/parser"
+	"github.com/dev7dev/uri-to-json/pkgs/utils"
 )
 
 var ShadowSocksMethodOnlyBySing = []string{
