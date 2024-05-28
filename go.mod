@@ -1,4 +1,4 @@
-module github.com/gvcgo/vpnparser
+module github.com/dev7dev/uri-to-json
 
 go 1.20
 
