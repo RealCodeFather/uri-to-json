@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	OutboundTag string = "PROXY_OUT"
+	OutboundTag string = "proxy"
 )
 
 func SetJsonObjectByString(key, value string, gJSON *gjson.Json) (newGJSON *gjson.Json) {

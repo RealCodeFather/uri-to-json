@@ -38,6 +38,6 @@ func GetPattern() string {
 	x := fmt.Sprintf(XrayOut, "{}", "{}")
 	j := gjson.New(x)
 	j.Set("outbounds.0.protocol", "vmess")
-	j.Set("outbounds.0.tag", "PROXY_OUT")
+	j.Set("outbounds.0.tag", "proxy")
 	return j.MustToJsonIndentString()
 }

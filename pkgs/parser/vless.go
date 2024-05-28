@@ -18,7 +18,6 @@ type ParserVless struct {
 	UUID       string
 	Encryption string
 	Flow       string
-
 	*StreamField
 }
 

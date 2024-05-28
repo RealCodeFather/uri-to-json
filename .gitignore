@@ -3,3 +3,4 @@ vpnparser
 vpnparser.exe
 *.json
 *.txt
+.idea

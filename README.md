@@ -42,7 +42,7 @@ ss://chacha20-ietf-poly1305:t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv@4e168c3.h4.gladns.c
         "plugin": "obfs-local\\u0026obfs=tls\\u0026obfs-host=(TG@WangCai_1)c68b799:50307",
         "server": "4e168c3.h4.gladns.com",
         "server_port": 2377,
-        "tag": "PROXY_OUT",
+        "tag": "proxy",
         "tls": {
                 "enabled": false
         },
@@ -83,6 +83,6 @@ vmess://{"add":"us47.encrypted.my.id","port":"80","id":"4bf9b7e0-85d1-4a59-9a29-
                         "path": "/pSAXxD8Ib7FZloqUMG"
                 }
         },
-        "tag": "PROXY_OUT"
+        "tag": "proxy"
 }
 ```
