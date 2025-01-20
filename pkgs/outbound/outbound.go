@@ -3,10 +3,10 @@ package outbound
 import (
 	"fmt"
 
-	"github.com/dev7dev/uri-to-json/pkgs/outbound/sing"
-	"github.com/dev7dev/uri-to-json/pkgs/outbound/xray"
-	"github.com/dev7dev/uri-to-json/pkgs/parser"
-	"github.com/dev7dev/uri-to-json/pkgs/utils"
+	"github.com/realcodefather/uri-to-json/pkgs/outbound/sing"
+	"github.com/realcodefather/uri-to-json/pkgs/outbound/xray"
+	"github.com/realcodefather/uri-to-json/pkgs/parser"
+	"github.com/realcodefather/uri-to-json/pkgs/utils"
 )
 
 type ClientType string
