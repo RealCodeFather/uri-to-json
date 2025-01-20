@@ -11,7 +11,8 @@ func main() {
 	// parser.VlessTest()
 	// parser.TrojanTest()
 	// parser.SSRTest()
-	// parser.TestWireguard()
+	// parser.WireguardTest()
+	// parser.SocksTest()
 
 	// s := xray.GetPattern()
 	// fmt.Println(s)
