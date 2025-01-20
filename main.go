@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/RealCodeFather/uri-to-json/pkgs/cmd"
-	_ "github.com/RealCodeFather/uri-to-json/pkgs/outbound/sing"
-	_ "github.com/RealCodeFather/uri-to-json/pkgs/outbound/xray"
-	_ "github.com/RealCodeFather/uri-to-json/pkgs/parser"
+	"github.com/realcodefather/uri-to-json/pkgs/cmd"
+	_ "github.com/realcodefather/uri-to-json/pkgs/outbound/sing"
+	_ "github.com/realcodefather/uri-to-json/pkgs/outbound/xray"
+	_ "github.com/realcodefather/uri-to-json/pkgs/parser"
 )
 
 func main() {
