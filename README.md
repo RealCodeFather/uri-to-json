@@ -1,10 +1,10 @@
 # vpnparser
-Vpnparser parses VPN URI to sing-box/xray-core Outbound.
+uri-to-json parses VPN URI to sing-box/xray-core Outbound.
 
 ## install
 
 ```bash
-go install github.com/dev7dev/uri-to-json@latest
+go install github.com/RealCodeFather/uri-to-json@latest
 ```
 
 ## commands
