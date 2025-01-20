@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/dev7dev/uri-to-json/pkgs/cmd"
-	_ "github.com/dev7dev/uri-to-json/pkgs/outbound/sing"
-	_ "github.com/dev7dev/uri-to-json/pkgs/outbound/xray"
-	_ "github.com/dev7dev/uri-to-json/pkgs/parser"
+	"github.com/RealCodeFather/uri-to-json/pkgs/cmd"
+	_ "github.com/RealCodeFather/uri-to-json/pkgs/outbound/sing"
+	_ "github.com/RealCodeFather/uri-to-json/pkgs/outbound/xray"
+	_ "github.com/RealCodeFather/uri-to-json/pkgs/parser"
 )
 
 func main() {
