@@ -3,8 +3,8 @@ package sing
 import (
 	"fmt"
 
-	"github.com/dev7dev/uri-to-json/pkgs/parser"
-	"github.com/dev7dev/uri-to-json/pkgs/utils"
+	"github.com/RealCodeFather/uri-to-json/pkgs/parser"
+	"github.com/RealCodeFather/uri-to-json/pkgs/utils"
 	"github.com/gogf/gf/v2/encoding/gjson"
 	"github.com/gogf/gf/v2/util/gconv"
 )
