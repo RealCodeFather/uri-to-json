@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/RealCodeFather/uri-to-json/pkgs/parser"
-	"github.com/RealCodeFather/uri-to-json/pkgs/utils"
+	"github.com/realcodefather/uri-to-json/pkgs/parser"
+	"github.com/realcodefather/uri-to-json/pkgs/utils"
 	"github.com/gogf/gf/v2/encoding/gjson"
 	"github.com/gogf/gf/v2/util/gconv"
 )
