@@ -65,7 +65,7 @@ func (that *ParserWirguard) Show() {
 	)
 }
 
-func TestWireguard() {
+func WireguardTest() {
 	rawUri := `wireguard://{"PrivateKey":"2B8LLjlXkJ608ct0LD0UnuuR9A2GuZUFBMBQJ9GFn1I=","AddrV4":"172.16.0.2","AddrV6":"2606:4700:110:8dad:87b4:b141:584d:e9dc","DNS":"1.1.1.1","MTU":1280,"PublicKey":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","AllowedIPs":["0.0.0.0/0","::/0"],"Endpoint":"198.41.222.233:2087","ClientID":"GpxH","DeviceName":"D9D669","Reserved":null,"Address":"198.41.222.233","Port":2087}`
 	p := &ParserWirguard{}
 	p.Parse(rawUri)
