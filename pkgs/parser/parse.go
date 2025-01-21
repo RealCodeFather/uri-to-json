@@ -10,13 +10,12 @@ import (
 
 const (
 	SchemeSS        string = "ss://"
-	SchemeSSR       string = "ssr://"
 	SchemeTrojan    string = "trojan://"
 	SchemeVless     string = "vless://"
 	SchemeVmess     string = "vmess://"
-	SchemeWireguard string = "wireguard://"
 	SchemeSocks string = "socks://"
 	SchemeHttp string = "http://"
+	SchemeWireguard string = "wireguard://"
 )
 
 func GetVpnScheme(rawUri string) string {
