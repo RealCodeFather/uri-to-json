@@ -6,8 +6,8 @@ import (
 
 	"encoding/json"
 
-	"github.com/realcodefather/uri-to-json/pkgs/parser"
-	"github.com/realcodefather/uri-to-json/pkgs/utils"
+	"github.com/RealCodeFather/uri-to-json/pkgs/parser"
+	"github.com/RealCodeFather/uri-to-json/pkgs/utils"
 	"github.com/gvcgo/goutils/pkgs/gutils"
 )
 
