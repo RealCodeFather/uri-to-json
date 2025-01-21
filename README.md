@@ -4,7 +4,7 @@ uri-to-json parses VPN URI to xray-core Outbound.
 ## install
 
 ```bash
-go install github.com/realcodefather/uri-to-json@latest
+go install github.com/RealCodeFather/uri-to-json@latest
 ```
 
 ## commands
