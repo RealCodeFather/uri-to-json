@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/realcodefather/uri-to-json/pkgs/parser"
-	"github.com/realcodefather/uri-to-json/pkgs/utils"
+	"github.com/RealCodeFather/uri-to-json/pkgs/parser"
+	"github.com/RealCodeFather/uri-to-json/pkgs/utils"
 )
 
 type ProxyItem struct {
