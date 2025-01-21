@@ -14,11 +14,11 @@ import (
 type Result struct {
 	Vmess        []*ProxyItem `json:"Vmess"`
 	Vless        []*ProxyItem `json:"Vless"`
+	Trojan       []*ProxyItem `json:"Trojan"`
 	ShadowSocks  []*ProxyItem `json:"Shadowsocks"`
 	Socks        []*ProxyItem `json:"Socks"`
 	Http         []*ProxyItem `json:"Http"`
 	Wireguard    []*ProxyItem `json:"Wireguard"`
-	Trojan       []*ProxyItem `json:"Trojan"`
 	UpdateAt       string       `json:"UpdateAt"`
 	VmessTotal     int          `json:"VmessTotal"`
 	VlessTotal     int          `json:"VlessTotal"`
