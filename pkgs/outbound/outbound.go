@@ -3,9 +3,9 @@ package outbound
 import (
 	"fmt"
 
-	"github.com/realcodefather/uri-to-json/pkgs/outbound/xray"
-	"github.com/realcodefather/uri-to-json/pkgs/parser"
-	"github.com/realcodefather/uri-to-json/pkgs/utils"
+	"github.com/RealCodeFather/uri-to-json/pkgs/outbound/xray"
+	"github.com/RealCodeFather/uri-to-json/pkgs/parser"
+	"github.com/RealCodeFather/uri-to-json/pkgs/utils"
 )
 
 type ClientType string
