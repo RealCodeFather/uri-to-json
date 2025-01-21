@@ -27,10 +27,12 @@ func GetOutbound(clientType ClientType, rawUri string) (result IOutbound) {
 			result = &xray.TrojanOut{RawUri: rawUri}
 		case parser.SchemeSS:
 			result = &xray.ShadowSocksOut{RawUri: rawUri}
-		case parser.SchemeHttp:
-			result = &xray.HttpOut{RawUri: rawUri}
 		case parser.SchemeSocks:
 			result = &xray.SocksOut{RawUri: rawUri}
+		case parser.SchemeHttp:
+			result = &xray.HttpOut{RawUri: rawUri}
+		case parser.SchemeWireguard:
+			result = &xray.WireguardOut{RawUri: rawUri}
 		default:
 			fmt.Println("unsupported protocol: ", scheme)
 		}
