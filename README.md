@@ -1,5 +1,5 @@
 # vpnparser
-uri-to-json parses VPN URI to sing-box/xray-core Outbound.
+uri-to-json parses VPN URI to xray-core Outbound.
 
 ## install
 
@@ -22,7 +22,6 @@ DESCRIPTION:
    vpnparser, download files from github for gvc.
 
 COMMANDS:
-   sing, s  Generate sing-box outbound from vpn url.
    xray, x  Generate xray-core outbound from vpn url.
    help, h  Shows a list of commands or help for one command
 
