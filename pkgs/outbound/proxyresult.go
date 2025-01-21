@@ -15,14 +15,18 @@ type Result struct {
 	Vmess        []*ProxyItem `json:"Vmess"`
 	Vless        []*ProxyItem `json:"Vless"`
 	ShadowSocks  []*ProxyItem `json:"Shadowsocks"`
-	ShadowSocksR []*ProxyItem `json:"ShadowsocksR"`
+	Socks        []*ProxyItem `json:"Socks"`
+	Http         []*ProxyItem `json:"Http"`
+	Wireguard    []*ProxyItem `json:"Wireguard"`
 	Trojan       []*ProxyItem `json:"Trojan"`
-	UpdateAt     string       `json:"UpdateAt"`
-	VmessTotal   int          `json:"VmessTotal"`
-	VlessTotal   int          `json:"VlessTotal"`
-	TrojanTotal  int          `json:"TrojanTotal"`
-	SSTotal      int          `json:"SSTotal"`
-	SSRTotal     int          `json:"SSRTotal"`
+	UpdateAt       string       `json:"UpdateAt"`
+	VmessTotal     int          `json:"VmessTotal"`
+	VlessTotal     int          `json:"VlessTotal"`
+	TrojanTotal    int          `json:"TrojanTotal"`
+	SSTotal        int          `json:"SSTotal"`
+	SocksTotal     int          `json:"SocksTotal"`
+	HttpTotal      int          `json:"HttpTotal"`
+	WireguardTotal int          `json:"WireguardTotal"`
 	totalList    []*ProxyItem
 	lock         *sync.Mutex
 }
@@ -69,9 +73,15 @@ func (that *Result) AddItem(proxyItem *ProxyItem) {
 	case parser.SchemeSS:
 		that.ShadowSocks = append(that.ShadowSocks, proxyItem)
 		that.SSTotal++
-	case parser.SchemeSSR:
-		that.ShadowSocksR = append(that.ShadowSocksR, proxyItem)
-		that.SSRTotal++
+	case parser.SchemeSocks:
+		that.Socks = append(that.Socks, proxyItem)
+		that.SocksTotal++
+	case parser.SchemeHttp:
+		that.Http = append(that.Http, proxyItem)
+		that.HttpTotal++
+	case parser.SchemeWireguard:
+		that.Wireguard = append(that.Wireguard, proxyItem)
+		that.WireguardTotal++
 	default:
 	}
 	that.totalList = append(that.totalList, proxyItem)
@@ -79,7 +89,7 @@ func (that *Result) AddItem(proxyItem *ProxyItem) {
 }
 
 func (that *Result) Len() int {
-	return that.VmessTotal + that.VlessTotal + that.TrojanTotal + that.SSTotal + that.SSRTotal
+	return that.VmessTotal + that.VlessTotal + that.TrojanTotal + that.SSTotal + that.SocksTotal + that.HttpTotal + that.WireguardTotal
 }
 
 func (that *Result) GetTotalList() []*ProxyItem {
@@ -88,7 +98,9 @@ func (that *Result) GetTotalList() []*ProxyItem {
 		that.totalList = append(that.totalList, that.Vless...)
 		that.totalList = append(that.totalList, that.Trojan...)
 		that.totalList = append(that.totalList, that.ShadowSocks...)
-		that.totalList = append(that.totalList, that.ShadowSocksR...)
+		that.totalList = append(that.totalList, that.Socks...)
+		that.totalList = append(that.totalList, that.Http...)
+		that.totalList = append(that.totalList, that.Wireguard...)
 	}
 	return that.totalList
 }
@@ -103,8 +115,12 @@ func (that *Result) Clear() {
 	that.TrojanTotal = 0
 	that.ShadowSocks = []*ProxyItem{}
 	that.SSTotal = 0
-	that.ShadowSocksR = []*ProxyItem{}
-	that.SSRTotal = 0
+	that.Socks = []*ProxyItem{}
+	that.SocksTotal = 0
+	that.Http = []*ProxyItem{}
+	that.HttpTotal = 0
+	that.Wireguard = []*ProxyItem{}
+	that.WireguardTotal = 0
 	that.totalList = []*ProxyItem{}
 	that.lock.Unlock()
 }
